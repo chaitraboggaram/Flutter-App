@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-  home: Home()
+  home: Home(),
 ));
 
-
 class Home extends StatelessWidget {
-  // The build function written here will override the function content that is defined inside the class's Widget
   @override
   Widget build(BuildContext context) {
-    return Scaffold(// Scaffold is like a wrapper to multiple widgets
+    return Scaffold(
       appBar: AppBar(
         title: Text(
           "My App",
@@ -19,14 +17,27 @@ class Home extends StatelessWidget {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.pink[600], // check material pallete for colors
+        backgroundColor: Colors.pink[600],
       ),
       body: Center(
-        child: Image(
-          image: AssetImage('assets/space2.jpeg'), // Save images in assets folder and update pubspec.lock
-        )
-
-        // to use another widget inside one widget we use child property
+        child: ElevatedButton.icon(
+          onPressed: () {
+            print("You clicked me"); // On click will display this in console
+          },
+          icon: Icon(
+            Icons.mail,
+            color: Colors.white,
+          ), // Corrected line: wrap Icons.mail with Icon widget
+          label: Text(
+            'Mail me',
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ), // Uncommented line: added label for visible content
+          style: ElevatedButton.styleFrom(
+            primary: Colors.pink,
+          ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
