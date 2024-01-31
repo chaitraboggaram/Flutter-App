@@ -1,0 +1,190 @@
+# Flutter/Dart-specific files
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+build/
+.dart_tool/
+doc/api/
+ios/Pods/
+macos/Pods/
+web/packages/
+windows/Generated/
+**/generated_plugin_registrant.dart
+**/GeneratedPluginRegistrant.*
+.dart_tool/
+
+# Android-specific files
+**/android/**/gradle-wrapper.jar
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/gradle-local.properties
+**/android/*.iml
+**/android/.idea/workspace.xml
+
+# iOS-specific files
+**/ios/Pods/
+**/ios/Runner.xcodeproj/
+**/ios/Flutter/Flutter.xcconfig
+**/ios/Flutter/*.mode*
+**/ios/Flutter/**/Generated.xcconfig
+**/ios/Flutter/AppFrameworkInfo.plist
+**/ios/Flutter/AppFrameworkInfo.plist
+**/ios/Flutter/Debug.xcconfig
+**/ios/Flutter/Release.xcconfig
+**/ios/Generated.xcconfig
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS-specific files
+**/macos/Flutter/Flutter.xcconfig
+**/macos/Flutter/Debug.xcconfig
+**/macos/Flutter/Release.xcconfig
+**/macos/Flutter/AppFrameworkInfo.plist
+**/macos/Flutter/AppFrameworkInfo.plist
+**/macos/Flutter/Generated.xcconfig
+
+# Windows-specific files
+**/windows/Flutter/AppFrameworkInfo.plist
+**/windows/Flutter/AppFrameworkInfo.plist
+**/windows/Generated/
+
+# VS Code directories
+.vscode/
+
+# IntelliJ-related
+.idea/
+
+# Android Studio
+*.iml
+.idea
+*.iws
+*.iwp
+*.ipr
+
+# General
+.DS_Store
+
+# Thumbnails
+._*
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Temporary files
+.svn
+node_modules/
+.hg
+*.bak
+*.swp
+*.log
+Thumbs.db
+ehthumbs.db
+
+# macOS Finder files
+.AppleDouble
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Xcode
+.DS_Store
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+*.xcuserstate
+project.xcworkspace/
+DerivedData/
+.idea/
+*.hmap
+*.xcworkspace
+*.xcuserstate
+*.xcscmblueprint
+
+# Flutter
+/.dart_tool/
+/.flutter-plugins
+/.flutter-plugins-dependencies
+/.pub/
+/build/
+.dart_tool/
+/doc/api/
+/ios/Pods/
+/macos/Pods/
+/web/packages/
+/windows/Generated/
+**/generated_plugin_registrant.dart
+**/GeneratedPluginRegistrant.*
+.dart_tool/
+
+# Android
+**/android/**/gradle-wrapper.jar
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/gradle-local.properties
+**/android/*.iml
+**/android/.idea/workspace.xml
+
+# IntelliJ IDEA
+**/out/
+**/*.iml
+**/*.iws
+**/*.iwp
+**/*.ipr
+**/build/
+
+# Visual Studio Code
+.vscode/
+
+# Xcode
+**/ios/Pods/
+**/ios/Runner.xcodeproj/
+**/ios/Flutter/Flutter.xcconfig
+**/ios/Flutter/*.mode*
+**/ios/Flutter/**/Generated.xcconfig
+**/ios/Flutter/AppFrameworkInfo.plist
+**/ios/Flutter/AppFrameworkInfo.plist
+**/ios/Flutter/Debug.xcconfig
+**/ios/Flutter/Release.xcconfig
+**/ios/Generated.xcconfig
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS
+**/macos/Flutter/Flutter.xcconfig
+**/macos/Flutter/Debug.xcconfig
+**/macos/Flutter/Release.xcconfig
+**/macos/Flutter/AppFrameworkInfo.plist
+**/macos/Flutter/AppFrameworkInfo.plist
+**/macos/Flutter/Generated.xcconfig
+
+# Windows
+**/windows/Flutter/AppFrameworkInfo.plist
+**/windows/Flutter/AppFrameworkInfo.plist
+**/windows/Generated/
+
+# Visual Studio Code directories
+.vscode/
+
+# IntelliJ-related
+.idea/
+
+# Android Studio
+*.iml
+.idea
+*.iws
+*.iwp
+*.ipr
