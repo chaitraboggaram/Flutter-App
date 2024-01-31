@@ -20,24 +20,12 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.pink[600],
       ),
       body: Center(
-        child: ElevatedButton.icon(
+        child: IconButton(
           onPressed: () {
-            print("You clicked me"); // On click will display this in console
+            print("You clicked me");
           },
-          icon: Icon(
-            Icons.mail,
-            color: Colors.white,
-          ), // Corrected line: wrap Icons.mail with Icon widget
-          label: Text(
-            'Mail me',
-            style: TextStyle(
-              color: Colors.white,
-            ),
-          ), // Uncommented line: added label for visible content
-          style: ElevatedButton.styleFrom(
-            primary: Colors.pink,
-          ),
-        ),
+          icon: Icon(Icons.mail),
+        )
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},

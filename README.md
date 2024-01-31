@@ -95,3 +95,92 @@ That's it! Your Flutter app should now be running on your Nexus 6.
      Image.asset("ImagePath") 
      ```
 
+
+## Buttons
+
+### Elevated Button
+
+```dart
+ElevatedButton(
+  onPressed: () {
+    // Your callback here
+  },
+  child: Text('Elevated Button'),
+)
+```
+
+### Text Button
+
+```dart
+TextButton(
+  onPressed: () {
+    // Your callback here
+  },
+  child: Text('Text Button'),
+)
+```
+
+### Outlined Button
+
+```dart
+OutlinedButton(
+  onPressed: () {
+    // Your callback here
+  },
+  child: Text('Outlined Button'),
+)
+```
+
+### Icon Button
+
+```dart
+IconButton(
+  onPressed: () {
+    // Your callback here
+  },
+  icon: Icon(Icons.star),
+)
+```
+
+### Elevated Button with Icon
+
+```dart
+ElevatedButton.icon(
+  onPressed: () {
+    // Your callback here
+  },
+  icon: Icon(Icons.mail),
+  label: Text('Send Email'),
+)
+```
+
+## Icons
+
+### Regular Icon
+
+```dart
+Icon(Icons.favorite)
+```
+
+### Custom Size Icon
+
+```dart
+Icon(Icons.star, size: 30.0)
+```
+
+### Colored Icon
+
+```dart
+Icon(Icons.mail, color: Colors.blue)
+```
+
+### Customized Icon
+
+```dart
+Icon(
+  Icons.settings,
+  color: Colors.green,
+  size: 40.0,
+)
+```
+
