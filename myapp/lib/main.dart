@@ -23,7 +23,7 @@ class Home extends StatelessWidget {
       ),
       body: Center(
         child: Image(
-          image: NetworkImage('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'),
+          image: AssetImage('assets/space2.jpeg'), // Save images in assets folder and update pubspec.lock
         )
 
         // to use another widget inside one widget we use child property

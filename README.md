@@ -46,3 +46,52 @@ To install Flutter on your development environment, follow these steps:
 
 That's it! Your Flutter app should now be running on your Nexus 6.
 
+
+### For Fonts:
+
+1. **Download Font from Google Fonts:**
+   - Visit [Google Fonts](https://fonts.google.com/).
+   - Select and download the desired font.
+
+2. **Organize Font Files:**
+   - Create a 'fonts' folder under your Flutter project directory.
+   - Drag and drop the downloaded .ttf file into the 'fonts' folder.
+
+3. **Update pubspec.yaml:**
+   - Open the `pubspec.yaml` file in your Flutter project.
+   - Uncomment the 'fonts' section (likely around line 77).
+   - Update the configuration, for example:
+     ```yaml
+     fonts:
+       - family: Oswald
+         fonts:
+           - asset: fonts/Oswald-VariableFont_wght.ttf
+     ```
+
+### For Images:
+
+1. **Create Assets Folder:**
+   - Create a folder named 'assets' under your Flutter project directory.
+
+2. **Save Image Files:**
+   - Save local image files (e.g., .jpg, .png) in the 'assets' folder.
+
+3. **Update pubspec.yaml:**
+   - Open the `pubspec.yaml` file in your Flutter project.
+   - Uncomment the 'assets' section (likely around line 62).
+   - Update the configuration, for example:
+     ```yaml
+     assets:
+       - assets/
+     ```
+
+4. **Access Images:**
+   - For Network Images: 
+     ```dart
+     Image.network("URL") 
+     ```
+   - For Local Images:
+     ```dart
+     Image.asset("ImagePath") 
+     ```
+
