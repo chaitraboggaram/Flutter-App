@@ -22,14 +22,10 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.pink[600], // check material pallete for colors
       ),
       body: Center(
-        child: Text(
-          "Hello, there!",
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            fontFamily: 'Oswald',
-          ),
-        ),
+        child: Image(
+          image: NetworkImage('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'),
+        )
+
         // to use another widget inside one widget we use child property
       ),
       floatingActionButton: FloatingActionButton(
