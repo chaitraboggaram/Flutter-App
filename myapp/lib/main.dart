@@ -20,13 +20,18 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.pink[600],
       ),
       body: Center(
-        child: IconButton(
-          onPressed: () {
-            print("You clicked me");
-          },
-          icon: Icon(Icons.mail),
-        )
+        child: Container(
+        // Takes up all the space that is available and manages it i.e acts as wrapper
+          color: Colors.blue,
+          child: Text(
+            "Hello, there!",
+            // Now as we have child widget the container takes space of only the child widget and not whole space
+          ),
+          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 50),      // Apply 20 & 50 pixels of padding around all edges inside the container
+          margin: EdgeInsets.all(30),       // Apply 30 padding around the container
+        ),
       ),
+
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text(
