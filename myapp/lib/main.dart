@@ -19,17 +19,23 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.pink[600],
       ),
-      body: Center(
-        child: Container(
-        // Takes up all the space that is available and manages it i.e acts as wrapper
-          color: Colors.blue,
-          child: Text(
-            "Hello, there!",
-            // Now as we have child widget the container takes space of only the child widget and not whole space
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Text("Hello, there"),
+          FloatingActionButton(
+            child: Text("Click me"),
+            onPressed: (){
+              print("You clicked me!");
+            }
           ),
-          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 50),      // Apply 20 & 50 pixels of padding around all edges inside the container
-          margin: EdgeInsets.all(30),       // Apply 30 padding around the container
-        ),
+          Container(
+            color: Colors.lightGreen,
+            padding: EdgeInsets.all(30),
+            child: Text("Inside Container"),
+          )
+
+        ],
       ),
 
       floatingActionButton: FloatingActionButton(

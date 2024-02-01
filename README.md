@@ -1,16 +1,42 @@
 # Flutter App Name
+## This Flutter app is designed for learning flutter.
 
-## Overview
-This Flutter app is designed for learning flutter.
+## Table of Contents
+1. [Prerequisites](#prerequisites)
+    - [Configure Nexus 6 with Android Studio](#configure-nexus-6-with-android-studio)
+2. [Install Flutter](#install-flutter)
+3. [Running the App](#running-the-app)
+4. [Playing around with the flutter app](#playing-around-with-the-flutter-app)
+    - [Fonts](#fonts)
+    - [Images](#images)
+    - [Buttons](#buttons)
+        - [Elevated Button](#elevated-button)
+        - [Text Button](#text-button)
+        - [Outlined Button](#outlined-button)
+        - [Icon Button](#icon-button)
+        - [Elevated Button with Icon](#elevated-button-with-icon)
+    - [Icons](#icons)
+        - [Regular Icon](#regular-icon)
+        - [Custom Size Icon](#custom-size-icon)
+        - [Colored Icon](#colored-icon)
+        - [Customized Icon](#customized-icon)
+    - [Container](#container)
+    - [Padding and Margin](#padding-and-margin)
+        - [Customizing Spacing](#customizing-spacing)
+    - [Flutter Row and Column](#flutter-row-and-column)
+        - [Row](#row)
+        - [Column](#column)
+        - [MainAxisAlignment and CrossAxisAlignment](#mainaxisalignment-and-crossaxisalignment)
+
 
 ## Prerequisites
 Before you begin, ensure you have the following installed:
 
 - [Flutter SDK](https://flutter.dev/docs/get-started/install)
 - [Android Studio](https://developer.android.com/studio) with Flutter and Dart plugins
-- [Nexus 6](https://www.google.com/nexus/6/) device for testing
+- [Nexus 6](https://developer.android.com/studio/run/managing-avds) device for testing
 
-## Configure Nexus 6 with Android Studio
+### Configure Nexus 6 with Android Studio
 To configure your Nexus 6 with Android Studio for testing:
 
 1. Connect your Nexus 6 to your computer using a USB cable.
@@ -46,6 +72,8 @@ To install Flutter on your development environment, follow these steps:
 
 That's it! Your Flutter app should now be running on your Nexus 6.
 
+# Playing around with the flutter app
+For more information, refer to the [Flutter Documentation](https://flutter.dev/docs).
 
 ## Fonts:
 
@@ -94,7 +122,6 @@ That's it! Your Flutter app should now be running on your Nexus 6.
      ```dart
      Image.asset("ImagePath") 
      ```
-
 
 ## Buttons
 
@@ -156,7 +183,9 @@ ElevatedButton.icon(
 
 ## Icons
 
-### Regular Icon
+### Regular
+
+ Icon
 
 ```dart
 Icon(Icons.favorite)
@@ -183,7 +212,6 @@ Icon(
   size: 40.0,
 )
 ```
-
 
 ## Container
 
@@ -230,8 +258,57 @@ You can customize the spacing by adjusting the values within `EdgeInsets`:
 - `EdgeInsets.symmetric(horizontal: value, vertical: value)` allows different horizontal and vertical spacing.
 - `EdgeInsets.only(top: value, left: value, bottom: value, right: value)` provides precise control over individual sides.
 
-Experiment with these properties to achieve the desired layout and spacing in your Flutter app.
 
-For more information, refer to the [Flutter Documentation](https://flutter.dev/docs).
+## Row and Column
+
+In Flutter, `Row` and `Column` are essential widgets for arranging child widgets horizontally (`Row`) or vertically (`Column`). They allow you to create flexible and responsive layouts easily.
+
+### Row
+
+A `Row` is used to arrange child widgets in a horizontal line. Each child is laid out along the main axis (horizontal by default). You can customize the alignment, spacing, and distribution of children within the row.
+
+```dart
+Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  children: [
+    Text('Item 1'),
+    Text('Item 2'),
+    Text('Item 3'),
+  ],
+)
+```
+
+### Column
+
+A `Column` is used to arrange child widgets in a vertical line. Like `Row`, you can customize the alignment, spacing, and distribution of children within the column.
+
+```dart
+Column(
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+    Text('Item 1'),
+    Text('Item 2'),
+    Text('Item 3'),
+  ],
+)
+```
+
+### MainAxisAlignment and CrossAxisAlignment
+
+Both `Row` and `Column` have properties like `mainAxisAlignment` and `crossAxisAlignment` that control how children are positioned:
+
+- `mainAxisAlignment`: Defines how children are aligned along the main axis.
+- `crossAxisAlignment`: Defines how children are aligned along the cross axis.
+
+```dart
+Row(
+  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  crossAxisAlignment: CrossAxisAlignment.center,
+  children: [
+    Text('Item 1'),
+    Text('Item 2'),
+    Text('Item 3'),
+  ],
+)
 ```
 
