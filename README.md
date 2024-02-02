@@ -10,16 +10,7 @@
     - [Fonts](#fonts)
     - [Images](#images)
     - [Buttons](#buttons)
-        - [Elevated Button](#elevated-button)
-        - [Text Button](#text-button)
-        - [Outlined Button](#outlined-button)
-        - [Icon Button](#icon-button)
-        - [Elevated Button with Icon](#elevated-button-with-icon)
     - [Icons](#icons)
-        - [Regular Icon](#regular-icon)
-        - [Custom Size Icon](#custom-size-icon)
-        - [Colored Icon](#colored-icon)
-        - [Customized Icon](#customized-icon)
     - [Container](#container)
     - [Padding and Margin](#padding-and-margin)
         - [Customizing Spacing](#customizing-spacing)
@@ -29,8 +20,8 @@
         - [MainAxisAlignment and CrossAxisAlignment](#mainaxisalignment-and-crossaxisalignment)
     - [Quick Actions for Flutter Widgets in Android Studio](#quick-actions-for-flutter-widgets-in-android-studio)
     - [Expanded Widget](#expanded-widget)
-      
-
+    - [SizedBox Widget](#sizedbox-widget)
+    - [Divider Widget](#divider-widget)
 
 ## Prerequisites
 Before you begin, ensure you have the following installed:
@@ -75,6 +66,8 @@ To install Flutter on your development environment, follow these steps:
 
 That's it! Your Flutter app should now be running on your Nexus 6.
 
+</br></br>
+
 # Playing around with the flutter app
 For more information, refer to the [Flutter Documentation](https://flutter.dev/docs).
 
@@ -98,6 +91,7 @@ For more information, refer to the [Flutter Documentation](https://flutter.dev/d
          fonts:
            - asset: fonts/Oswald-VariableFont_wght.ttf
      ```
+<br>
 
 ## Images:
 
@@ -113,7 +107,7 @@ For more information, refer to the [Flutter Documentation](https://flutter.dev/d
    - Update the configuration, for example:
      ```yaml
      assets:
-       - assets/
+       - assets/<SubFolder1>/...
      ```
 
 4. **Access Images:**
@@ -125,11 +119,19 @@ For more information, refer to the [Flutter Documentation](https://flutter.dev/d
      ```dart
      Image.asset("ImagePath") 
      ```
+<br>
 
 ## Buttons
 
-### Elevated Button
+### Various Types of Buttons in Flutter
 
+- Elevated Button
+- Text Button
+- Outlined Button
+- Icon Button
+- Elevated Button with Icon
+
+### Example
 ```dart
 ElevatedButton(
   onPressed: () {
@@ -139,75 +141,17 @@ ElevatedButton(
 )
 ```
 
-### Text Button
-
-```dart
-TextButton(
-  onPressed: () {
-    // Your callback here
-  },
-  child: Text('Text Button'),
-)
-```
-
-### Outlined Button
-
-```dart
-OutlinedButton(
-  onPressed: () {
-    // Your callback here
-  },
-  child: Text('Outlined Button'),
-)
-```
-
-### Icon Button
-
-```dart
-IconButton(
-  onPressed: () {
-    // Your callback here
-  },
-  icon: Icon(Icons.star),
-)
-```
-
-### Elevated Button with Icon
-
-```dart
-ElevatedButton.icon(
-  onPressed: () {
-    // Your callback here
-  },
-  icon: Icon(Icons.mail),
-  label: Text('Send Email'),
-)
-```
+<br>
 
 ## Icons
+### Various Types of Icons in Flutter
 
-### Regular
+- Regular
+- Custom Size Icon
+- Colored Icon
+- Customized Icon
 
- Icon
-
-```dart
-Icon(Icons.favorite)
-```
-
-### Custom Size Icon
-
-```dart
-Icon(Icons.star, size: 30.0)
-```
-
-### Colored Icon
-
-```dart
-Icon(Icons.mail, color: Colors.blue)
-```
-
-### Customized Icon
-
+### Example
 ```dart
 Icon(
   Icons.settings,
@@ -215,6 +159,7 @@ Icon(
   size: 40.0,
 )
 ```
+<br>
 
 ## Container
 
@@ -228,6 +173,8 @@ Container(
   child: Text('Hello, Flutter!'),
 )
 ```
+
+<br>
 
 ## Padding and Margin
 
@@ -252,6 +199,7 @@ Container(
   child: Text('Outer Margin'),
 )
 ```
+<br>
 
 ## Customizing Spacing
 
@@ -315,6 +263,7 @@ Row(
 )
 ```
 
+</br>
 
 ## Quick Actions for Flutter Widgets in Android Studio
 
@@ -326,7 +275,7 @@ When working on Flutter projects in Android Studio, you can efficiently manage y
 2. **Locate the Action menu:** Look for a small yellow blub icon that appears to the left of the widget, where the row numbers are displayed.
 3. **Access Quick Actions:** Click on the yellow blub icon, and a menu with Quick Actions will appear.
 4. **Select the Desired Action:** Choose from available Quick Actions, such as moving the widget up or down or removing it altogether.
-![Alt Text](myapp/assets/IMG_0461.jpg)
+<p align="center"><img src="myapp/assets/IMG_0461.jpg"  width="300" height="250"></p>
 
 The same can be found in Flutter outline as well.
 
@@ -342,8 +291,7 @@ This feature enhances the development experience by providing a convenient way t
 
 ## Expanded Widget
 
-The `Expanded` widget in Flutter is used to make a child of a `Row`, `Column`, or `Flex` expand to fill the available space along the main axis.
-Wrap the child widget with `Expanded` to make it take up the remaining space within a parent widget.
+The `Expanded` widget in Flutter makes a child of a `Row`, `Column`, or `Flex` expand to fill the available space along the main axis. Wrap the child widget with `Expanded` to make it take up the remaining space within a parent widget.
 
 ```dart
 Row(
@@ -367,5 +315,37 @@ Row(
    ],
 ),
 ```
-`Expanded` helps create flexible and responsive layouts by adjusting child sizes based on available space. `flex` distributes space in provided portions.
+
+`Expanded` facilitates flexible and responsive layouts by adjusting child sizes based on available space. The `flex` property distributes space in provided portions. This is particularly useful for wrapping Image widgets.
+
+
+
+## SizedBox Widget
+
+The `SizedBox` widget in Flutter is used to create a box with a specified width, height, or both. It adds space between or around widgets and is particularly useful for creating gaps, padding, or fixed dimensions.
+
+### Example:
+
+```dart
+SizedBox(
+  height: 10.0,
+),
+```
+
+In this example, a `SizedBox` is employed to create vertical space with a height of 10.0. You can customize the `height` property to set the desired dimension.
+
+
+## Divider Widget
+
+The `Divider` widget in Flutter is used to create a horizontal line that separates content. It is commonly employed to visually distinguish sections or elements within the user interface.
+
+```dart
+Divider(
+  height: 20.0,
+  color: Colors.blue,
+  thickness: 2.0,
+)
+```
+
+In this example, a `Divider` is created with a height of 20.0, a blue color, and a thickness of 2.0. You can customize the `height`, `color`, and `thickness` properties to achieve the desired appearance.
 
