@@ -326,7 +326,7 @@ When working on Flutter projects in Android Studio, you can efficiently manage y
 2. **Locate the Action menu:** Look for a small yellow blub icon that appears to the left of the widget, where the row numbers are displayed.
 3. **Access Quick Actions:** Click on the yellow blub icon, and a menu with Quick Actions will appear.
 4. **Select the Desired Action:** Choose from available Quick Actions, such as moving the widget up or down or removing it altogether.
-![Alt text](IMG_0461.jpg)
+![Alt Text](myapp/assets/IMG_0461.jpg)
 
 The same can be found in Flutter outline as well.
 
