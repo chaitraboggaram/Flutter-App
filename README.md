@@ -1,12 +1,12 @@
 # Flutter App Name
-## This Flutter app is designed for learning flutter.
+> **Note:** This repository is mainly meant for learning flutter.
 
 ## Table of Contents
 1. [Prerequisites](#prerequisites)
     - [Configure Nexus 6 with Android Studio](#configure-nexus-6-with-android-studio)
-2. [Install Flutter](#install-flutter)
-3. [Running the App](#running-the-app)
-4. [Playing around with the flutter app](#playing-around-with-the-flutter-app)
+    - [Install Flutter](#install-flutter)
+2. [Running the App](#running-the-app)
+3. [Playing around with the flutter app](#playing-around-with-the-flutter-app)
     - [Fonts](#fonts)
     - [Images](#images)
     - [Buttons](#buttons)
@@ -27,6 +27,9 @@
         - [Row](#row)
         - [Column](#column)
         - [MainAxisAlignment and CrossAxisAlignment](#mainaxisalignment-and-crossaxisalignment)
+    - [Quick Actions for Flutter Widgets in Android Studio](#quick-actions-for-flutter-widgets-in-android-studio)
+    - [Expanded Widget](#expanded-widget)
+      
 
 
 ## Prerequisites
@@ -46,7 +49,7 @@ To configure your Nexus 6 with Android Studio for testing:
 5. Follow the on-screen instructions to configure the virtual device settings.
 6. Click "Finish" to create the virtual device.
 
-## Install Flutter
+### Install Flutter
 To install Flutter on your development environment, follow these steps:
 
 1. Download the Flutter SDK from the [official Flutter website](https://flutter.dev/docs/get-started/install).
@@ -311,4 +314,58 @@ Row(
   ],
 )
 ```
+
+
+## Quick Actions for Flutter Widgets in Android Studio
+
+When working on Flutter projects in Android Studio, you can efficiently manage your widgets by utilizing the Quick Actions feature. This allows you to perform actions such as moving widgets up and down or removing them without the need for manual cut, paste, or deletion.
+
+### How to Access Quick Actions:
+
+1. **Navigate to the Widget:** Click on the widget you want to manage within your Flutter code.
+2. **Locate the Action menu:** Look for a small yellow blub icon that appears to the left of the widget, where the row numbers are displayed.
+3. **Access Quick Actions:** Click on the yellow blub icon, and a menu with Quick Actions will appear.
+4. **Select the Desired Action:** Choose from available Quick Actions, such as moving the widget up or down or removing it altogether.
+![Alt text](IMG_0461.jpg)
+
+The same can be found in Flutter outline as well.
+
+### Examples of Quick Actions:
+- **Move Widget Up:** Move the selected widget upwards in your code.
+- **Move Widget Down:** Move the selected widget downwards in your code.
+- **Remove Widget:** Quickly remove the selected widget without manually cutting, pasting, or deleting.
+- **Wrap with Widget:** Wrap this widget inside another widget without having to manually change indentation.
+This feature enhances the development experience by providing a convenient way to manage and rearrange widgets within your Flutter codebase directly from the code editor.
+
+**Note:** The availability of Quick Actions may vary based on the version of Android Studio and Flutter plugin you are using.
+
+
+## Expanded Widget
+
+The `Expanded` widget in Flutter is used to make a child of a `Row`, `Column`, or `Flex` expand to fill the available space along the main axis.
+Wrap the child widget with `Expanded` to make it take up the remaining space within a parent widget.
+
+```dart
+Row(
+   children: [
+      Expanded(
+         flex: 3,
+         child: Container(
+            padding: EdgeInsets.all(30),
+            color: Colors.blue,
+            child: Text("1"),
+         ),
+      ),
+      Expanded(
+         flex: 2,
+         child: Container(
+            padding: EdgeInsets.all(30),
+            color: Colors.orange,
+            child: Text("2"),
+         ),
+      ),
+   ],
+),
+```
+`Expanded` helps create flexible and responsive layouts by adjusting child sizes based on available space. `flex` distributes space in provided portions.
 
